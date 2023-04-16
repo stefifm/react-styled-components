@@ -1,26 +1,48 @@
+import styled from 'styled-components'
 import logo from '../../assets/images/logo.svg'
+import { colorPrimary } from '../UI/Variables'
+
+const StyleHeader = styled.nav`
+  background-color: ${colorPrimary};
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15vw;
+  height: 10vh;
+  align-items: center;
+`
+
+const Logo = styled.img`
+  height: 50px;
+  width: 50px;
+`
+
+const BtnHeader = styled.a`
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px 20px;
+  margin: 0 10px;
+  font-weight: 600;
+  border: 2px solid white;
+  color: ${({ primary }) => (primary ? 'white' : colorPrimary)};
+  background: ${({ primary }) => (primary ? 'transparent' : 'white')};
+`
 
 function Header() {
   return (
-    <div className='header'>
-      <img
-        className='imagen-logo'
+    <StyleHeader>
+      <Logo
         src={logo}
         alt='Logo Smart Bank'
       />
       <div>
-        <a
-          className='btn-secundario'
-          href='https://google.com'>
-          Ayuda
-        </a>
-        <a
-          className='btn-primario'
+        <BtnHeader href='https://google.com'>Ayuda</BtnHeader>
+        <BtnHeader
+          primary
           href='https://google.com'>
           Salir
-        </a>
+        </BtnHeader>
       </div>
-    </div>
+    </StyleHeader>
   )
 }
 
