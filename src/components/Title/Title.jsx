@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-function Title({ children }) {
-  return <h1 className='title'>{children}</h1>
-}
+const Title = styled.h1`
+  color: grey;
+  padding: 25px 0;
+`
 
 Title.propTypes = {
   children: PropTypes.string.isRequired,
