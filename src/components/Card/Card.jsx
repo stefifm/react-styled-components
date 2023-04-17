@@ -23,7 +23,6 @@ const Info = styled.div`
 
 function CardComponent({ cargo }) {
   const { type, value, from, date } = cargo
-  console.log(type)
   return (
     <Card>
       {ImageFilter(type)}

@@ -1,4 +1,4 @@
-import { Icon } from './components/UI'
+import { IconTheme } from './components/UI'
 import alimentacion from './assets/images/alimentacion.svg'
 import otros from './assets/images/otros.svg'
 import salud from './assets/images/salud.svg'
@@ -8,31 +8,31 @@ import utilidades from './assets/images/utilidades.svg'
 export default (type) => {
   const Images = {
     Restaurante: (
-      <Icon
+      <IconTheme
         src={alimentacion}
         alt='Restaurante'
       />
     ),
     Salud: (
-      <Icon
+      <IconTheme
         src={salud}
         alt='Salud'
       />
     ),
     Transporte: (
-      <Icon
+      <IconTheme
         src={transporte}
         alt='Transporte'
       />
     ),
     Utilidades: (
-      <Icon
+      <IconTheme
         src={utilidades}
         alt='Utilidades'
       />
     ),
     default: (
-      <Icon
+      <IconTheme
         src={otros}
         alt='Otros'
       />
