@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Account from '../Account/Account'
 import Title from '../Title/Title'
+import List from '../List/List'
 
 const StyledContainer = styled.div`
   background-color: #f1f1f1;
@@ -23,6 +24,7 @@ function Container() {
       <Title>Smart Bank</Title>
       <StyledContent>
         <Account />
+        <List />
       </StyledContent>
     </StyledContainer>
   )
